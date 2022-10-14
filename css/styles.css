@@ -419,20 +419,18 @@ Advantages */
 
 
 
-.soc-links {
+
+.team .net-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 206px;
     height: 44px;
     margin-right: auto;
     margin-left: auto;
 }
 
-.soc-links .net-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.soc-links .net-link {
+.team .net-link {
     background-color: transparent;
     width: 44px;
     height: 44px;
@@ -443,11 +441,11 @@ Advantages */
     color: rgba(175, 177, 184, 1);
 }
 
-.soc-links .net-icon {
+.team .net-icon {
     fill: currentColor;
 }
 
-.soc-links .net-link:hover {
+.team .net-link:hover {
     background-color: var(--secondary-color);
     color: #ffffff;
 }
