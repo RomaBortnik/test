@@ -1,17 +1,453 @@
-pre {
-    font-family: 'Arial', 'Helvetica', sans-serif;
-    color: #2a2a2a;
+:root {
+    --primary-text-color: rgba(33, 33, 33, 1);
+    --descr-color: rgba(117, 117, 117, 1);
+    --secondary-color: rgba(33, 150, 243, 1);
+    --primary-bgd-color: rgba(255, 255, 255, 1);
+    --logo-header-color: rgba(0, 0, 0, 1);
+    --bgd-hero-color: rgba(47, 48, 58, 1);
+    --focus-btn-color: rgb(16, 137, 236);
+    --bgd-team-color: rgba(245, 244, 250, 1);
+    --contacts-footer-color: rgba(255, 255, 255, 0.6);
+
+}
+
+body {
+    background-color: var(--primary-bgd-color);
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    letter-spacing: 0.03em;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* Логотип */
+.logo {
+    margin-right: 93px;
+    color: var(--secondary-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo .accent-studio-hd {
+    color: var(--logo-header-color);
+}
+
+.logo .accent-studio-ft {
+    color: var(--primary-bgd-color);
+}
+
+/* Навігація основної сторінки */
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+    ;
+}
+
+.page-header>.container {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav>.item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.site-contacts>.item+.item {
+    margin-left: 50px;
+}
+
+.site-nav .link,
+.site-contacts .link {
+    color: currentColor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-contacts .link {
+    color: var(--descr-color);
+}
+
+.site-nav .active {
+    color: var(--secondary-color);
+}
+
+.site-nav .link:hover,
+.site-contacts .link:hover,
+.site-nav .link:focus,
+.site-contacts .link:focus {
+    color: var(--secondary-color);
+}
+
+/* Герой */
+.hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgd.jpg);
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 200px 0;
+    color: var(--primary-bgd-color);
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.hero>.hero-title {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+
+.hero>.main-btn {
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: none;
+
+    color: inherit;
+    background-color: var(--secondary-color);
     font-size: 16px;
+    line-height: 1.88;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: inherit;
+    font-style: inherit;
+    letter-spacing: inherit;
 }
 
-pre::first-letter {
-    font-family: 'Tahoma', serif;
-    font-size: 32px;
-    color: #f44336;
+.hero>.main-btn:hover {
+    background-color: var(--focus-btn-color);
 }
 
-/* Let's add text selection styles for each paragraph of the poem. */
-pre::selection {
+/* Основна частина 
+Advantages */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.advantages .list {
+    display: flex;
+}
+
+.advantages .item {
+    width: 270px;
+}
+
+.advantages .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.advantages .advantages-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.advantages .advantages-descr {
+    color: var(--descr-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* activity */
+.section.activity {
+    padding-top: 0;
+}
+
+.activity .list {
+    display: flex;
+}
+
+.activity .activity-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.activity .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/*team*/
+.team {
+    background-color: var(--bgd-team-color);
+}
+
+.team .list {
+    display: flex;
+}
+
+.team .information:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team .information {
+    width: 270px;
+    padding-bottom: 30px;
+    background-color: var(--primary-bgd-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team .team-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.information>.team-photo {
+    margin-bottom: 30px;
+}
+
+.team .team-name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team .team-position {
+    color: var(--descr-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/* footer */
+.page-footer {
+    padding: 60px 0;
+    /* Додатково */
+    background-color: var(--bgd-hero-color);
+}
+
+.page-footer .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.contacts .list-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.contacts .link {
+    color: var(--contacts-footer-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.contacts .location {
+    color: var(--primary-bgd-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--secondary-color);
+}
+
+/* Page Portfolio*/
+.projects .projects-filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.projects-filters>.item.item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.projects-filters .btn {
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: none;
+
+    color: inherit;
+    background-color: var(--bgd-team-color);
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    cursor: pointer;
+    letter-spacing: inherit;
+}
+
+.projects-filters .btn:hover,
+.projects-filters .btn:focus {
+    background-color: var(--secondary-color);
+    color: var(--primary-bgd-color);
+}
+
+.photo {
+    display: block;
+}
+
+.projects .examples {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.examples>.poster {
+    /* flex-basis: calc(100%/3-30px); */
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 370px;
+}
+
+.poster>.content {
+    width: 100%;
+    padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.content .examples-title {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.content .examples-descr {
+    color: var(--descr-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.examples-title>.upper {
+    text-transform: uppercase;
+}
+
+
+
+
+
+.site-contacts .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: currentColor;
+}
+
+.site-contacts .photo {
+    margin-right: 10px;
+
+}
+
+.advantages .bgd {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}
+
+
+
+
+.soc-links {
+    width: 206px;
+    height: 44px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.soc-links .net-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.soc-links .net-link {
+    background-color: transparent;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(175, 177, 184, 1);
+}
+
+.soc-links .net-icon {
+    fill: currentColor;
+}
+
+.soc-links .net-link:hover {
+    background-color: var(--secondary-color);
     color: #ffffff;
-    background-color: #3f51b5;
 }
