@@ -1,78 +1,529 @@
+:root {
+    --primary-text-color: rgba(33, 33, 33, 1);
+    --descr-color: rgba(117, 117, 117, 1);
+    --secondary-color: rgba(33, 150, 243, 1);
+    --primary-bgd-color: rgba(255, 255, 255, 1);
+    --logo-header-color: rgba(0, 0, 0, 1);
+    --bgd-hero-color: rgba(47, 48, 58, 1);
+    --focus-btn-color: rgb(16, 137, 236);
+    --bgd-team-color: rgba(245, 244, 250, 1);
+    --contacts-footer-color: rgba(255, 255, 255, 0.6); 
+}
+
 body {
-    
+    background-color: var(--primary-bgd-color);
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    letter-spacing: 0.03em;
 }
 
 .container {
-    width: 1440px;
-    margin-right: auto;
     margin-left: auto;
-    padding-top: 94px;
-    
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
+.section {
+    padding: 94px 0;
+}
 
-.btn {
-    position: relative;
-    overflow: hidden;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
 
+.list {
+    list-style: none;
+}
 
+.link {
+    text-decoration: none;
+}
+
+/* Логотип */
+.logo {
+    margin-right: 93px;
+    color: var(--secondary-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo .accent-studio-hd {
+    color: var(--logo-header-color);
+}
+
+.logo .accent-studio-ft {
+    color: var(--primary-bgd-color);
+}
+
+/* Навігація основної сторінки */
+.page-header {
+    height: 80px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-header>.container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.main-nav {
     display: flex;
     align-items: center;
- 
-    margin-left: 50px;
+}
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav>.item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.site-contacts>.item+.item {
+    margin-left: 30px;
+}
+
+.site-nav .link,
+.site-contacts .link {
+    color: currentColor;
     font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
 
-    padding: 12px 50px;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    background-color: palevioletred;
-    color: black;
+.site-contacts .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--descr-color);
+}
+
+.site-contacts .site-contacts-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.site-nav .active {
+    color: var(--secondary-color);
+}
+
+.site-nav .link:hover,
+.site-contacts .link:hover,
+.site-nav .link:focus,
+.site-contacts .link:focus {
+    color: var(--secondary-color);
+}
+
+/* Герой */
+.hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgd.jpg);
+    max-width: 1600px;
+    padding: 200px 0;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--primary-bgd-color);
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.hero>.hero-title {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+
+.hero>.main-btn {
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: none;
+
+    color: inherit;
+    background-color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 1.88;
     cursor: pointer;
-    transition: background-color 250ms ease-out;
+    font-weight: 700;
+    font-family: inherit;
+    font-style: inherit;
+    letter-spacing: inherit;
 }
 
-.btn::before {
+.hero>.main-btn:hover {
+    background-color: var(--focus-btn-color);
+}
+
+/* Основна частина 
+Advantages */
+.visually-hidden {
     position: absolute;
-    content: '';
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.advantages .list {
+    display: flex;
+}
+
+.advantages .item {
+    width: 270px;
+}
+
+.advantages .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.advantages-bgd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--bgd-team-color);
+    border-radius: 4px;
+}
+
+.advantages .advantages-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.advantages .advantages-descr {
+    color: var(--descr-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* activity */
+.section.activity {
+    padding-top: 0;
+}
+
+.activity .list {
+    display: flex;
+}
+
+.activity .activity-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.activity .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/*team*/
+.team {
+    background-color: var(--bgd-team-color);
+}
+
+.team .list {
+    display: flex;
+}
+
+.team .information:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team .information {
+    width: 270px;
+    padding-bottom: 30px;
+    background-color: var(--primary-bgd-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team .team-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.information>.team-photo {
+    margin-bottom: 30px;
+}
+
+.team .team-name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team .team-position {
+    color: var(--descr-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+
+.team .net-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    width: 206px;
+    height: 44px;
+}
+
+.team .net-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(175, 177, 184, 1);
+}
+
+.team .net-icon {
+    fill: currentColor;
+}
+
+.team .net-link:hover,
+.team .net-link:focus {
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    color: #fff;
+}
+
+/* clients */
+.clients-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.clients-list {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: rgba(175, 177, 184, 1);
+}
+
+.clients-icon {
+    fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+/* footer */
+.page-footer {
+    padding: 60px 0;
+    /* Додатково */
+    background-color: var(--bgd-hero-color);
+}
+
+.page-footer .logo {
     display: inline-block;
-
-    top: 50%;
-    right: 50px;
-
-    width: 16px;
-    height: 16px;
-    background-color: blue;
-
-    transform: translateY(calc(-50% + 30px));
-    transition: transform 250ms linear;
+    margin-bottom: 20px;
 }
 
-.btn::after {
-    content: '';
-    display: inline-block;
-
-    margin-left: 10px;
-
-    width: 16px;
-    height: 16px;
-    background-color: green;
-    transition: transform 250ms linear;
+.contacts .list-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
-
-
-.btn:hover {
-    background-color: blueviolet;
+.contacts .link {
+    color: var(--contacts-footer-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
-
-.btn:hover::before {
-transform: translateY(-50%);
+.contacts .location {
+    color: var(--primary-bgd-color);
 }
 
-.btn:hover::after {
-    transform: translateY(-30px);
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--secondary-color);
+}
+
+.net-list-footer {
+    margin-left: 70px;
+}
+
+.net-list-footer > .upper {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.net-list-footer {
+    width: 206px;
+}
+
+.net-list-footer .net-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.net-list-footer .net-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #fff;
+}
+
+.net-list-footer .net-icon {
+    fill: currentColor;
+}
+
+.net-list-footer .net-link:hover,
+.net-list-footer .net-link:focus {
+    background-color: var(--secondary-color);
+}
+
+.page-footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+/* Page Portfolio*/
+.projects .projects-filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.projects-filters>.item.item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.projects-filters .btn {
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: none;
+
+    color: inherit;
+    background-color: var(--bgd-team-color);
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    cursor: pointer;
+    letter-spacing: inherit;
+}
+
+.projects-filters .btn:hover,
+.projects-filters .btn:focus {
+    background-color: var(--secondary-color);
+    color: var(--primary-bgd-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.photo {
+    display: block;
+}
+
+.projects .examples {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.examples .poster {
+    width: 370px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.poster .content {
+    width: 100%;
+    padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.content .examples-title {
+    color: var(--primary-text-color);
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.content .examples-descr {
+    color: var(--descr-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.examples-title>.upper {
+    text-transform: uppercase;
+}
+
+.examples .poster:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
