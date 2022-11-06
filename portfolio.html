@@ -19,22 +19,22 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header__main-nav">
           <a class="link logo header__logo" href="./index.html" lang="en">
             Web<span class="logo--black-accent">Studio</span>
           </a>
           <ul class="list site-nav">
             <li class="site-nav__item">
-              <a class="link site-nav__link site-nav__link" href="./index.html"
+              <a
+                class="link site-nav__link site-nav__link--active"
+                href="./index.html"
                 >Студія</a
               >
             </li>
 
             <li class="site-nav__item">
-              <a
-                class="link site-nav__link site-nav__link--active"
-                href="./portfolio.html"
+              <a class="link site-nav__link" href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
@@ -73,33 +73,33 @@
       <section class="section projects">
         <div class="container">
           <h1 class="visually-hidden">Наші роботи</h1>
-          <ul class="list projects-filters">
-            <li class="projects-filters__item">
-              <button class="button projects-filters__button" type="button">
+          <ul class="list filters-list">
+            <li class="filters-list__item">
+              <button class="button filters-list__button" type="button">
                 Усі
               </button>
             </li>
 
-            <li class="projects-filters__item">
-              <button class="button projects-filters__button" type="button">
+            <li class="filters-list__item">
+              <button class="button filters-list__button" type="button">
                 Веб-сайти
               </button>
             </li>
 
-            <li class="projects-filters__item">
-              <button class="button projects-filters__button" type="button">
+            <li class="filters-list__item">
+              <button class="button filters-list__button" type="button">
                 Додатки
               </button>
             </li>
 
-            <li class="projects-filters__item">
-              <button class="button projects-filters__button" type="button">
+            <li class="filters-list__item">
+              <button class="button filters-list__button" type="button">
                 Дизайн
               </button>
             </li>
 
-            <li class="projects-filters__item">
-              <button class="button projects-filters__button" type="button">
+            <li class="filters-list__item">
+              <button class="button filters-list__button" type="button">
                 Маркетинг
               </button>
             </li>
@@ -114,7 +114,7 @@
                     alt="Веб-сайт Технокряк"
                   />
                   <div class="examples-list__overlay">
-                    <p class="examples-list__overlay-descr">
+                    <p class="examples-list__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -124,7 +124,7 @@
                 </div>
                 <div class="examples-list__content">
                   <h2 class="examples-list__title">Технокряк</h2>
-                  <p class="examples-list__descr">Веб-сайт</p>
+                  <p class="examples-list__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -138,7 +138,7 @@
                     alt="Дизайн постеру Orlean vs Golden Star"
                   />
                   <div class="examples-list__overlay">
-                    <p class="examples-list__overlay-descr">
+                    <p class="examples-list__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -150,7 +150,7 @@
                   <h2 class="examples-list__title">
                     Постер <span lang="en">Orlean vs Golden Star</span>
                   </h2>
-                  <p class="examples-list__descr">Дизайн</p>
+                  <p class="examples-list__text">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -164,7 +164,7 @@
                     alt="Додаток ресторану Seafood"
                   />
                   <div class="examples-list__overlay">
-                    <p class="examples-list__overlay-descr">
+                    <p class="examples-list__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -176,7 +176,7 @@
                   <h2 class="examples-list__title">
                     Ресторан <span lang="en">Seafood</span>
                   </h2>
-                  <p class="examples-list__descr">Додаток</p>
+                  <p class="examples-list__text">Додаток</p>
                 </div>
               </a>
             </li>
@@ -190,7 +190,7 @@
                     alt="Маркетинг проєкту Prime"
                   />
                   <div class="examples-list__overlay">
-                    <p class="examples-list__overlay-descr">
+                    <p class="examples-list__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -202,7 +202,7 @@
                   <h2 class="examples-list__title">
                     Проєкт <span lang="en">Prime</span>
                   </h2>
-                  <p class="examples-list__descr">Маркетинг</p>
+                  <p class="examples-list__text">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -216,7 +216,7 @@
                     alt="Додаток проєкту Boxes"
                   />
                   <div class="examples-list__overlay">
-                    <p class="examples-list__overlay-descr">
+                    <p class="examples-list__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -228,7 +228,7 @@
                   <h2 class="examples-list__title">
                     Проєкт <span lang="en">Boxes</span>
                   </h2>
-                  <p class="examples-list__descr">Додаток</p>
+                  <p class="examples-list__text">Додаток</p>
                 </div>
               </a>
             </li>
@@ -242,7 +242,7 @@
                     alt="Веб-сайт Inspiration has no Borders"
                   />
                   <div class="examples-list__overlay">
-                    <p class="examples-list__overlay-descr">
+                    <p class="examples-list__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -254,7 +254,7 @@
                   <h2 class="examples-list__title">
                     <span lang="en">Inspiration has no Borders</span>
                   </h2>
-                  <p class="examples-list__descr">Веб-сайт</p>
+                  <p class="examples-list__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -268,7 +268,7 @@
                     alt="Дизайн виданян Limited Edition"
                   />
                   <div class="examples-list__overlay">
-                    <p class="examples-list__overlay-descr">
+                    <p class="examples-list__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -280,7 +280,7 @@
                   <h2 class="examples-list__title">
                     Видання <span lang="en">Limited Edition</span>
                   </h2>
-                  <p class="examples-list__descr">Дизайн</p>
+                  <p class="examples-list__text">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -294,7 +294,7 @@
                     alt="Маркетинг проєкту LAB"
                   />
                   <div class="examples-list__overlay">
-                    <p class="examples-list__overlay-descr">
+                    <p class="examples-list__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -306,7 +306,7 @@
                   <h2 class="examples-list__title">
                     Проєкт <span class="upper" lang="en">LAB</span>
                   </h2>
-                  <p class="examples-list__descr">Маркетинг</p>
+                  <p class="examples-list__text">Маркетинг</p>
                 </div>
               </a>
             </li>
@@ -320,7 +320,7 @@
                     alt="Додаток Growing Business"
                   />
                   <div class="examples-list__overlay">
-                    <p class="examples-list__overlay-descr">
+                    <p class="examples-list__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -332,7 +332,7 @@
                   <h2 class="examples-list__title">
                     <span lang="en">Growing Business</span>
                   </h2>
-                  <p class="examples-list__descr">Додаток</p>
+                  <p class="examples-list__text">Додаток</p>
                 </div>
               </a>
             </li>
@@ -348,10 +348,10 @@
             Web<span class="logo--white-accent">Studio</span>
           </a>
           <address class="footer__address">
-            <ul class="list contacts">
-              <li class="contacts__item">
+            <ul class="list contacts-list">
+              <li class="contacts-list__item">
                 <a
-                  class="link contacts__link contacts__link--white"
+                  class="link contacts-list__link contacts-list__link--white"
                   href="https://goo.gl/maps/3bxnUZ3EVZmGAf4NA"
                   target="_blank"
                   rel="noreferrer noopener nofollow"
@@ -360,22 +360,25 @@
                 </a>
               </li>
 
-              <li class="contacts__item">
-                <a class="link contacts__link" href="mailto:info@devstudio.com"
+              <li class="contacts-list__item">
+                <a
+                  class="link contacts-list__link"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
 
-              <li class="contacts__item">
-                <a class="link contacts__link" href="tel:+380961111111"
+              <li class="contacts-list__item">
+                <a class="link contacts-list__link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
+
         <div class="footer__socials">
-          <p class="upper footer__text">Приєднуйтесь</p>
+          <p class="upper footer-text">Приєднуйтесь</p>
           <ul class="list net-list">
             <li class="item net-list__item">
               <a href="" class="link net-list__link net-list__link--bgd">
@@ -410,12 +413,13 @@
             </li>
           </ul>
         </div>
+
         <form
           class="footer__subscribe-form"
           name="subscribe-form"
           autocomplete="off"
         >
-          <p class="upper footer__text">Підпишіться на розсилку</p>
+          <p class="upper footer-text">Підпишіться на розсилку</p>
           <div class="footer__flex-block">
             <label>
               <input

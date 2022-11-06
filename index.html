@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header__main-nav">
           <a class="link logo header__logo" href="./index.html" lang="en">
             Web<span class="logo--black-accent">Studio</span>
@@ -81,7 +81,7 @@
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="list advantages-list">
             <li class="advantages-list__item">
-              <div class="advantages-list__bgd">
+              <div class="advantages-list__container">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -94,7 +94,7 @@
             </li>
 
             <li class="advantages-list__item">
-              <div class="advantages-list__bgd">
+              <div class="advantages-list__container">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -107,7 +107,7 @@
             </li>
 
             <li class="advantages-list__item">
-              <div class="advantages-list__bgd">
+              <div class="advantages-list__container">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -119,7 +119,7 @@
             </li>
 
             <li class="advantages-list__item">
-              <div class="advantages-list__bgd">
+              <div class="advantages-list__container">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -133,9 +133,9 @@
           </ul>
         </div>
       </section>
-      <section class="section activity">
+      <section class="section activity section-activity">
         <div class="container">
-          <h2 class="activity__title">Чим ми займаємося</h2>
+          <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list activity-list">
             <li class="activity-list__item">
               <div class="activity-list__thumb">
@@ -147,7 +147,7 @@
                   height="294"
                 />
                 <div class="activity-list__label">
-                  <p class="activity-list__descr">Десктопні додатки</p>
+                  <p class="activity-list__text">Десктопні додатки</p>
                 </div>
               </div>
             </li>
@@ -162,7 +162,7 @@
                   height="294"
                 />
                 <div class="activity-list__label">
-                  <p class="activity-list__descr">Мобільні додатки</p>
+                  <p class="activity-list__text">Мобільні додатки</p>
                 </div>
               </div>
             </li>
@@ -177,7 +177,7 @@
                   height="294"
                 />
                 <div class="activity-list__label">
-                  <p class="activity-list__descr">Дизайнерські рішення</p>
+                  <p class="activity-list__text">Дизайнерські рішення</p>
                 </div>
               </div>
             </li>
@@ -186,7 +186,7 @@
       </section>
       <section class="section team">
         <div class="container">
-          <h1 class="team__title">Наша команда</h1>
+          <h1 class="section-title">Наша команда</h1>
           <ul class="list team-list">
             <li class="team-list__item">
               <img
@@ -370,7 +370,7 @@
       </section>
       <section class="section clients">
         <div class="container">
-          <h2 class="clients__title">Постійні клієнти</h2>
+          <h2 class="section-title">Постійні клієнти</h2>
           <ul class="list clients-list">
             <li class="item clients-list__item">
               <a href="#" class="link clients-list__link">
@@ -423,17 +423,19 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container footer__container">
+
         <div class="footer__contacts">
           <a class="link logo footer__logo" href="./index.html" lang="en">
             Web<span class="logo--white-accent">Studio</span>
           </a>
           <address class="footer__address">
-            <ul class="list contacts">
-              <li class="contacts__item">
+            <ul class="list contacts-list">
+              <li class="contacts-list__item">
                 <a
-                  class="link contacts__link contacts__link--white"
+                  class="link contacts-list__link contacts-list__link--white"
                   href="https://goo.gl/maps/3bxnUZ3EVZmGAf4NA"
                   target="_blank"
                   rel="noreferrer noopener nofollow"
@@ -442,22 +444,23 @@
                 </a>
               </li>
 
-              <li class="contacts__item">
-                <a class="link contacts__link" href="mailto:info@devstudio.com"
+              <li class="contacts-list__item">
+                <a class="link contacts-list__link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
 
-              <li class="contacts__item">
-                <a class="link contacts__link" href="tel:+380961111111"
+              <li class="contacts-list__item">
+                <a class="link contacts-list__link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
+
         <div class="footer__socials">
-          <p class="upper footer__text">Приєднуйтесь</p>
+          <p class="upper footer-text">Приєднуйтесь</p>
             <ul class="list net-list">
               <li class="item net-list__item">
                 <a href="" class="link net-list__link net-list__link--bgd">
@@ -492,8 +495,9 @@
               </li>
             </ul>
         </div>
+
         <form class="footer__subscribe-form" name="subscribe-form" autocomplete="off">
-          <p class="upper footer__text">Підпишіться на розсилку</p>
+          <p class="upper footer-text">Підпишіться на розсилку</p>
           <div class="footer__flex-block">
             <label>
               <input
@@ -522,68 +526,68 @@
           </svg>
         </button>
         <form
-          class="form-application"
-          name="form-application"
+          class="application-form"
+          name="application-form"
           autocomplete="off"
         >
-          <h2 class="form-application__title">Залиште свої дані, ми вам передзвонимо</h2>
-          <div class="form-application__field">
-            <label class="form-application__label" for="username">Ім'я</label>
-            <div class="form-application__container">
+          <h2 class="application-form__title">Залиште свої дані, ми вам передзвонимо</h2>
+          <div class="application-form__field">
+            <label class="application-form__label" for="username">Ім'я</label>
+            <div class="application-form__container">
               <input
-                class="form-application__input"
+                class="application-form__input"
                 id="username"
                 name="username"
                 type="text"
               />
-              <svg class="form-application__icon" width="18" height="18">
+              <svg class="application-form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
           </div>
 
-          <div class="form-application__field">
-            <label class="form-application__label" for="phone">Телефон</label>
-            <div class="form-application__container">
-              <input class="form-application__input" name="phone" id="phone" type="tel" />
-              <svg class="form-application__icon" width="18" height="18">
+          <div class="application-form__field">
+            <label class="application-form__label" for="phone">Телефон</label>
+            <div class="application-form__container">
+              <input class="application-form__input" name="phone" id="phone" type="tel" />
+              <svg class="application-form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
           </div>
 
-          <div class="form-application__field">
-            <label class="form-application__label" for="email">Пошта</label>
-            <div class="form-application__container">
-              <input class="form-application__input" name="email" id="email" type="email" />
-              <svg class="form-application__icon" width="18" height="18">
+          <div class="application-form__field">
+            <label class="application-form__label" for="email">Пошта</label>
+            <div class="application-form__container">
+              <input class="application-form__input" name="email" id="email" type="email" />
+              <svg class="application-form__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </div>
           </div>
 
-          <div class="form-application__field">
-            <label class="form-application__label" for="comment">Коментар</label>
+          <div class="application-form__field">
+            <label class="application-form__label" for="comment">Коментар</label>
             <textarea
-              class="form-application__textarea"
+              class="application-form__textarea"
               name="comment"
               id="comment"
               placeholder="Введіть текст"
             ></textarea>
           </div>
 
-          <div class="form-application__field form-checkbox">
-            <input class="form-application__checkbox" name="policy" id="policy" type="checkbox" />
-            <svg class="form-application__policy-icon" width="16" height="15">
+          <div class="application-form__field form-checkbox">
+            <input class="application-form__checkbox" name="policy" id="policy" type="checkbox" />
+            <svg class="application-form__policy-icon" width="16" height="15">
               <use href="./images/icons.svg#icon-icon-check"></use>
             </svg>
-            <label class="form-application__label policy" for="policy">
+            <label class="application-form__label application-form__label--bigger" for="policy">
               Погоджуюся з розсилкою та приймаю
-              <a class="link form-application__link" href=""> Умови договору</a>
+              <a class="link application-form__link" href=""> Умови договору</a>
             </label>
           </div>
 
-          <button class="button form-application__button" type="submit">Відправити</button>
+          <button class="button application-form__button" type="submit">Відправити</button>
         </form>
       </div>
     </div>
