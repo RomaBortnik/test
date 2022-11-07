@@ -1,0 +1,29 @@
+.clients-list {
+    @include centeredFlex($justify: space-between);
+}
+
+.clients-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid var(--net-list-color);
+    border-radius: 4px;
+    color: var(--net-list-color);
+
+    transition: border 250ms var(--transform-effect),
+    color 250ms var(--transform-effect);
+
+    &:hover,
+    &:focus {
+        color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
+    }
+}
+
+.clients-list__icon {
+    fill: currentColor;
+}

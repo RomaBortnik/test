@@ -1,0 +1,25 @@
+.submit-btn {
+    @include centeredFlex();
+
+    letter-spacing: 0.06em;
+
+    padding: 10px 28px;
+
+    color: var(--color-white);
+
+    &:hover {
+        background-color: var(--focus-btn-color);
+    }
+}
+
+.submit-btn--right {
+    margin-left: 12px;
+}
+
+.submit-btn__icon {
+    fill: currentColor;
+}
+
+.submit-btn__icon--end {
+    margin-left: 10px;
+}

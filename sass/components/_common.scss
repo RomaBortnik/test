@@ -1,0 +1,16 @@
+.site-nav__link,
+.site-contacts__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: currentColor;
+}
+
+.site-nav__link:hover,
+.site-contacts__link:hover,
+.site-nav__link:focus,
+.site-contacts__link:focus {
+    color: var(--secondary-color);
+}

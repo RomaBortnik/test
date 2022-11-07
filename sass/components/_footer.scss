@@ -1,0 +1,62 @@
+.footer {
+    padding: 60px 0;
+
+    background-color: var(--bgd-footer-color);
+}
+
+.footer__container {
+    @include centeredFlex($align: baseline);
+}
+
+.footer__logo {
+    display: inline-block;
+
+    margin-bottom: 20px;
+}
+
+.footer__socials {
+    margin-left: 70px;
+}
+
+.footer__text {
+    font-size: 14px;
+    line-height: 1.14;
+
+    margin-bottom: 20px;
+
+    color: var(--color-white);
+}
+
+.footer__subscribe-form {
+    margin-left: auto;
+}
+
+.footer__flex-block {
+    @include centeredFlex();
+}
+
+.footer__input {
+    width: 358px;
+    height: 50px;
+
+    padding-left: 16px;
+
+ 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    
+    color: var(--color-white);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--bgd-hero-color);
+    outline: none;
+    
+    transition: border-color 250ms var(--transform-effect);
+
+    &:focus {
+        border-color: var(--secondary-color);
+    }
+}

@@ -1,0 +1,24 @@
+.button {
+    font-size: 16px;
+    line-height: 1.88;
+    font-weight: 700;
+    font-family: inherit;
+    font-style: inherit;
+    letter-spacing: inherit;
+
+    padding: 10px 32px;
+
+    border: none;
+    border-radius: 4px;
+    color: var(--color-white);
+    background-color: var(--secondary-color);
+    box-shadow: 0px 4px 4px var(--shadow-btn-color);
+
+    cursor: pointer;
+
+    transition: background-color 250ms var(--transform-effect);
+
+    &:hover {
+        background-color: var(--focus-btn-color);
+    }
+}

@@ -1,0 +1,37 @@
+.net-list {
+    @include centeredFlex($justify: space-between);
+
+    width: 206px;
+    height: 44px;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.net-list__link {
+    @include centeredFlex($justify: center);
+
+    width: 44px;
+    height: 44px;
+
+    color: var(--net-list-color);
+    border-radius: 50%;
+
+    transition: background-color 250ms var(--transform-effect),
+    color 250ms var(--transform-effect);
+
+    &:hover, 
+    &:focus {
+        color: #fff;
+        background-color: var(--secondary-color);
+    }
+}
+
+.net-list__icon {
+    fill: currentColor;
+}
+
+.net-list__link--bgd {
+    color: var(--color-white);
+    background-color: var(--net-list-bgd-color);
+}
