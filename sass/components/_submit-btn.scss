@@ -3,17 +3,22 @@
 
     letter-spacing: 0.06em;
 
+    margin-right: auto;
+    margin-left: auto;
+
     padding: 10px 28px;
 
-    color: var(--color-white);
+    color: $color-white;
 
     &:hover {
-        background-color: var(--focus-btn-color);
+        background-color: $focus-btn-color;
     }
 }
 
 .submit-btn--right {
-    margin-left: 12px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+    }
 }
 
 .submit-btn__icon {

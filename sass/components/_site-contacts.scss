@@ -11,9 +11,9 @@
 .site-contacts__link {
     @include centeredFlex($justify: center);
 
-    color: var(--descr-color);
+    color: $descr-color;
 
-    transition: color 250ms var(--transform-effect);
+    transition: color 250ms $transform-effect;
 }
 
 .site-contacts__icon {

@@ -1,39 +1,66 @@
 .advantages-list {
-    display: flex;
-}
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
+    
+    @media screen and (min-width:768px) and (max-width: 1199px) {
+        flex-wrap: wrap;
+        margin-left: calc(-1 * $portfolio-gap);
+        margin-top: calc(-1 * $portfolio-gap);
+    }
 
-.advantages-list__item {
-    width: 270px;
-}
+    &__item {
+        width: 100%;
+    
+        @media screen and (min-width:768px) and (max-width: 1199px) {
+            flex-basis: calc((100% / 2 - $portfolio-gap));
+            margin-left: $portfolio-gap;
+            margin-top: $portfolio-gap;
+        }
+    }
 
-.advantages-list__item:not(:last-child) {
-    margin-right: 30px;
-}
+    &__item:not(:last-child) {
+        margin-bottom: 30px;
+    
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-right: 30px;
+        }
+    }
 
-.advantages-list__container {
-    @include centeredFlex($justify: center);
+    &__container {
+        @include centeredFlex($justify: center);
+    
+        width: 100%;
+        height: 120px;
+    
+        margin-bottom: 30px;
+    
+        background-color: $bgd-team-color;
+        border-radius: 4px;
+    }
 
-    width: 100%;
-    height: 120px;
+    &__title {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+    
+        margin-bottom: 10px;
+    
+        @media screen and (min-width: 768px) {
+            text-align: left;
+        }
+    }
 
-    margin-bottom: 30px;
-
-    background-color: var(--bgd-team-color);
-    border-radius: 4px;
-}
-
-.advantages-list__title {
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-
-    margin-bottom: 10px;
-}
-
-.advantages-list__descr {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-
-    color: var(--descr-color);
+    &__descr {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+    
+        color: $descr-color;
+    }
 }

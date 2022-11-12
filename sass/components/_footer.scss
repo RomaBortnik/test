@@ -1,11 +1,33 @@
 .footer {
+    text-align: center;
+
     padding: 60px 0;
 
-    background-color: var(--bgd-footer-color);
+    background-color: $bgd-footer-color;
 }
 
 .footer__container {
-    @include centeredFlex($align: baseline);
+    @media screen and (min-width: 1200px) {
+        @include centeredFlex($align: baseline);
+    }
+}
+
+.footer__block {
+    @media screen and (min-width: 768px) {
+        @include centeredFlex($align: baseline, $justify: space-around)
+    }
+    
+}
+
+.footer__contacts {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+       text-align: left;
+
+       margin-right: 70px;
+       margin-bottom: 0;
+    }
 }
 
 .footer__logo {
@@ -15,7 +37,11 @@
 }
 
 .footer__socials {
-    margin-left: 70px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .footer__text {
@@ -24,22 +50,31 @@
 
     margin-bottom: 20px;
 
-    color: var(--color-white);
+    color: $color-white;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .footer__subscribe-form {
-    margin-left: auto;
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
 }
 
 .footer__flex-block {
-    @include centeredFlex();
+    @media screen and (min-width: 1200px) {
+        @include centeredFlex();
+    }
 }
 
 .footer__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
 
     padding-left: 16px;
+    margin-bottom: 20px;
 
  
     font-weight: 400;
@@ -47,16 +82,22 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     
-    color: var(--color-white);
+    color: $color-white;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    background-color: var(--bgd-hero-color);
+    background-color: $bgd-hero-color;
     outline: none;
     
-    transition: border-color 250ms var(--transform-effect);
+    transition: border-color 250ms $transform-effect;
 
     &:focus {
-        border-color: var(--secondary-color);
+        border-color: $secondary-color;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+
+        margin-bottom: 0;
     }
 }

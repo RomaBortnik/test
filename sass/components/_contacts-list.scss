@@ -1,5 +1,5 @@
 .contacts-list__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .contacts-list__link {
@@ -8,16 +8,16 @@
     font-size: 14px;
     line-height: 1.71;
 
-    color: var(--contacts-footer-color);
+    color: $contacts-footer-color;
 
-    transition: color 250ms var(--transform-effect);
+    transition: color 250ms $transform-effect;
 
     &:hover,
     &:focus {
-        color: var(--secondary-color);
+        color: $secondary-color;
     }
 }
 
 .contacts-list__link--white {
-    color: var(--primary-bgd-color);
+    color: $primary-bgd-color;
 }
