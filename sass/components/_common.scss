@@ -14,3 +14,24 @@
 .site-contacts__link:focus {
     color: $secondary-color;
 }
+
+.mobile-nav__link,
+.mobile-contacts__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    color: currentColor;
+}
+
+.mobile-nav__link:hover,
+.mobile-contacts__link:hover,
+.mobile-nav__link:focus,
+.mobile-contacts__link:focus {
+    color: $secondary-color;
+}
+
+.mobile-contacts__link {
+    color: $descr-color;
+}

@@ -1,0 +1,13 @@
+.mobile-nav {
+    &__item:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+    &__link {
+        transition: color 250ms $transform-effect;
+    
+        &--active {
+            color: $secondary-color;
+        }
+    }
+}
