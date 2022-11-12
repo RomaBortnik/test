@@ -1530,6 +1530,11 @@ ul {
     margin-top: -30px;
   }
 }
+@media screen and (max-width: 767px) {
+  .team-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .team-list__item:not(:last-child) {
     margin-right: 30px;
