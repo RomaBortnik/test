@@ -1,0 +1,33 @@
+.mobile-socials {
+  @include centeredFlex();
+
+  &__item {
+    position: relative;
+  }
+
+  &__item:not(:last-child)::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+
+    width: 1px;
+    height: 100%;
+
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: $secondary-color;
+  }
+}

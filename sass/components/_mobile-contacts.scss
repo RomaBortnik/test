@@ -1,14 +1,30 @@
 .mobile-contacts {
-    &__item:not(:last-child) {
-            margin-bottom: 32px;
-        }
-    
-        &__link {
-            transition: color 250ms $transform-effect;
-    
-            &--active {
-                color: $secondary-color;
-            }
-        }
-}
+  margin-top: auto;
+  margin-bottom: 64px;
 
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: $descr-color;
+
+    transition: color 250ms $transform-effect;
+
+    &--active {
+      font-size: 34px;
+      line-height: 1.18;
+      color: $secondary-color;
+    }
+
+    &:hover,
+    &:focus {
+      color: $secondary-color;
+    }
+  }
+}

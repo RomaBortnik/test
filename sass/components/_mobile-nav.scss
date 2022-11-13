@@ -1,13 +1,26 @@
 .mobile-nav {
-    &__item:not(:last-child) {
-            margin-bottom: 32px;
-        }
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 
-    &__link {
-        transition: color 250ms $transform-effect;
-    
-        &--active {
-            color: $secondary-color;
-        }
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    color: currentColor;
+
+    transition: color 250ms $transform-effect;
+
+    &--active {
+      color: $secondary-color;
     }
+
+    &:hover,
+    &:focus {
+      color: $secondary-color;
+    }
+  }
 }
+
