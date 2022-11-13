@@ -1,17 +1,16 @@
 body {
-    font-family: $text-font;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0.03em;
+  font-family: $text-font;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 
-    background-color: $primary-bgd-color;
-    color: $primary-text-color;
+  background-color: $primary-bgd-color;
+  color: $primary-text-color;
 }
 
 img {
-    display: block;
+  display: block;
 
-    width: 100%;
-    height: auto;
+  min-width: 100%;
+  height: auto;
 }
-
