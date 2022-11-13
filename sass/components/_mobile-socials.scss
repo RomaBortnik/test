@@ -29,5 +29,9 @@
     letter-spacing: 0.02em;
 
     color: $secondary-color;
+
+    @media screen and (max-width: 400px) {
+      font-size: 14px;
+    }
   }
 }
