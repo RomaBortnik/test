@@ -19,6 +19,7 @@
   transition: color 250ms $transform-effect;
 
   &__icon {
+    z-index: 999;
     fill: currentColor;
   }
 
