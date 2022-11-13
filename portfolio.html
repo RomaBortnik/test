@@ -108,6 +108,10 @@
                 <div class="examples-list__thumb">
                   <img
                     class="examples-list__photo"
+                    srcset="
+                      ./images/portfolio-techno.jpg    1x,
+                      ./images/portfolio-techno@2x.jpg 2x
+                    "
                     src="./images/portfolio-techno.jpg"
                     alt="Веб-сайт Технокряк"
                   />
@@ -132,6 +136,10 @@
                 <div class="examples-list__thumb">
                   <img
                     class="examples-list__photo"
+                    srcset="
+                      ./images/portfolio-new-orlean.jpg    1x,
+                      ./images/portfolio-new-orlean@2x.jpg 2x
+                    "
                     src="./images/portfolio-new-orlean.jpg"
                     alt="Дизайн постеру Orlean vs Golden Star"
                   />
@@ -158,6 +166,10 @@
                 <div class="examples-list__thumb">
                   <img
                     class="examples-list__photo"
+                    srcset="
+                      ./images/portfolio-seafood.jpg    1x,
+                      ./images/portfolio-seafood@2x.jpg 2x
+                    "
                     src="./images/portfolio-seafood.jpg"
                     alt="Додаток ресторану Seafood"
                   />
@@ -184,6 +196,10 @@
                 <div class="examples-list__thumb">
                   <img
                     class="examples-list__photo"
+                    srcset="
+                      ./images/portfolio-prime.jpg    1x,
+                      ./images/portfolio-prime@2x.jpg 2x
+                    "
                     src="./images/portfolio-prime.jpg"
                     alt="Маркетинг проєкту Prime"
                   />
@@ -210,6 +226,10 @@
                 <div class="examples-list__thumb">
                   <img
                     class="examples-list__photo"
+                    srcset="
+                      ./images/portfolio-boxes.jpg    1x,
+                      ./images/portfolio-boxes@2x.jpg 2x
+                    "
                     src="./images/portfolio-boxes.jpg"
                     alt="Додаток проєкту Boxes"
                   />
@@ -236,6 +256,10 @@
                 <div class="examples-list__thumb">
                   <img
                     class="examples-list__photo"
+                    srcset="
+                      ./images/portfolio-inspiration.jpg    1x,
+                      ./images/portfolio-inspiration@2x.jpg 2x
+                    "
                     src="./images/portfolio-inspiration.jpg"
                     alt="Веб-сайт Inspiration has no Borders"
                   />
@@ -262,6 +286,10 @@
                 <div class="examples-list__thumb">
                   <img
                     class="examples-list__photo"
+                    srcset="
+                      ./images/portfolio-limited-ed.jpg    1x,
+                      ./images/portfolio-limited-ed@2x.jpg 2x
+                    "
                     src="./images/portfolio-limited-ed.jpg"
                     alt="Дизайн виданян Limited Edition"
                   />
@@ -288,6 +316,10 @@
                 <div class="examples-list__thumb">
                   <img
                     class="examples-list__photo"
+                    srcset="
+                      ./images/portfolio-lab.jpg    1x,
+                      ./images/portfolio-lab@2x.jpg 2x
+                    "
                     src="./images/portfolio-lab.jpg"
                     alt="Маркетинг проєкту LAB"
                   />
@@ -314,6 +346,10 @@
                 <div class="examples-list__thumb">
                   <img
                     class="examples-list__photo"
+                    srcset="
+                      ./images/portfolio-growing-buss.jpg    1x,
+                      ./images/portfolio-growing-buss@2x.jpg 2x
+                    "
                     src="./images/portfolio-growing-buss.jpg"
                     alt="Додаток Growing Business"
                   />
@@ -441,5 +477,78 @@
         </form>
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle menu-toggle--absolute js-close-menu">
+        <svg class="menu-toggle__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-close-big"></use>
+        </svg>
+      </button>
+
+      <ul class="list mobile-nav">
+        <li class="mobile-nav__item">
+          <a
+            class="link mobile-nav__link mobile-nav__link--active"
+            href="./index.html"
+            >Студія</a
+          >
+        </li>
+
+        <li class="mobile-nav__item">
+          <a class="link mobile-nav__link" href="./portfolio.html">Портфоліо</a>
+        </li>
+
+        <li class="mobile-nav__item">
+          <a class="link mobile-nav__link" href="#">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="list mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a
+            class="link mobile-contacts__link mobile-contacts__link--active"
+            href="tel:+380961111111"
+          >
+            +38 096 111 11 11</a
+          >
+        </li>
+
+        <li class="mobile-contacts__item">
+          <a
+            class="link mobile-contacts__link"
+            href="mailto:info@devstudio.com"
+          >
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="list mobile-socials">
+        <li class="mobile-socials__item">
+          <a class="link mobile-socials__link" href="./index.html">
+            <span lang="uk">Instagram</span></a
+          >
+        </li>
+
+        <li class="mobile-socials__item">
+          <a class="link mobile-socials__link" href="./index.html">
+            <span lang="uk">Twitter</span></a
+          >
+        </li>
+
+        <li class="mobile-socials__item">
+          <a class="link mobile-socials__link" href="./index.html">
+            <span lang="uk">Facebook</span></a
+          >
+        </li>
+
+        <li class="mobile-socials__item">
+          <a class="link mobile-socials__link" href="./index.html">
+            <span lang="uk">LinkedIn</span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
