@@ -1,25 +1,25 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-    opacity: 1;
+  opacity: 1;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 
-    transition: opacity 250ms $transform-effect,
+  transition: opacity 250ms $transform-effect,
     visibility 250ms $transform-effect;
 }
 
 .is-hidden .modal {
-    transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%) scale(1.1);
 
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .form-checkbox {
-    position: relative;
+  position: relative;
 }
