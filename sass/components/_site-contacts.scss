@@ -1,26 +1,36 @@
 .site-contacts {
-    display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
+  @media screen and (min-width: 768px) {
+    display: block;
     margin-left: auto;
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
-.site-contacts__item+.site-contacts__item {
+.site-contacts__item + .site-contacts__item {
+  margin-top: 10px;
+
+  @media screen and (min-width: 1200px) {
     margin-left: 30px;
+  }
 }
 
 .site-contacts__link {
-    @include centeredFlex($justify: center);
+  @include centeredFlex();
 
-    color: $descr-color;
+  color: $descr-color;
 
-    transition: color 250ms $transform-effect;
+  transition: color 250ms $transform-effect;
 }
 
 .site-contacts__icon {
-    margin-right: 10px;
+  margin-right: 10px;
 
-    fill: currentColor;
+  fill: currentColor;
 }
