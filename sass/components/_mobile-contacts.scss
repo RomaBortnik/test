@@ -2,8 +2,16 @@
   margin-top: auto;
   margin-bottom: 64px;
 
+  @media screen and (max-width: 400px) {
+    margin-bottom: 40px;
+  }
+
   &__item:not(:last-child) {
     margin-bottom: 32px;
+
+    @media screen and (max-width: 400px) {
+      margin-bottom: 24px;
+    }
   }
 
   &__link {
@@ -16,10 +24,18 @@
 
     transition: color 250ms $transform-effect;
 
+    @media screen and (max-width: 400px) {
+      font-size: 20px;
+    }
+
     &--active {
       font-size: 34px;
       line-height: 1.18;
       color: $secondary-color;
+
+      @media screen and (max-width: 400px) {
+        font-size: 28px;
+      }
     }
 
     &:hover,

@@ -1,8 +1,9 @@
-.contacts-list__item:not(:last-child) {
+.contacts-list {
+  &__item:not(:last-child) {
     margin-bottom: 8px;
-}
+  }
 
-.contacts-list__link {
+  &__link {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -12,12 +13,13 @@
 
     transition: color 250ms $transform-effect;
 
+    &--white {
+      color: $primary-bgd-color;
+    }
+
     &:hover,
     &:focus {
-        color: $secondary-color;
+      color: $secondary-color;
     }
-}
-
-.contacts-list__link--white {
-    color: $primary-bgd-color;
+  }
 }

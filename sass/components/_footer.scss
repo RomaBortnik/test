@@ -1,50 +1,48 @@
 .footer {
-    text-align: center;
+  text-align: center;
 
-    padding: 60px 0;
+  padding: 60px 0;
 
-    background-color: $bgd-footer-color;
-}
+  background-color: $bgd-footer-color;
 
-.footer__container {
+  &__container {
     @media screen and (min-width: 1200px) {
-        @include centeredFlex($align: baseline);
+      @include centeredFlex($align: baseline);
     }
-}
+  }
 
-.footer__block {
+  &__block {
     @media screen and (min-width: 768px) {
-        @include centeredFlex($align: baseline, $justify: space-around)
+      @include centeredFlex($align: baseline, $justify: space-around);
     }
-    
-}
+  }
 
-.footer__contacts {
+  &__contacts {
     margin-bottom: 60px;
 
     @media screen and (min-width: 1200px) {
-       text-align: left;
+      text-align: left;
 
-       margin-right: 70px;
-       margin-bottom: 0;
+      margin-right: 70px;
+      margin-bottom: 0;
     }
-}
+  }
 
-.footer__logo {
+  &__logo {
     display: inline-block;
 
     margin-bottom: 20px;
-}
+  }
 
-.footer__socials {
+  &__socials {
     margin-bottom: 60px;
 
     @media screen and (min-width: 1200px) {
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
-}
+  }
 
-.footer__text {
+  &__text {
     font-size: 14px;
     line-height: 1.14;
 
@@ -53,55 +51,55 @@
     color: $color-white;
 
     @media screen and (min-width: 1200px) {
-        text-align: left;
+      text-align: left;
     }
-}
+  }
 
-.footer__subscribe-form {
+  &__subscribe-form {
     @media screen and (min-width: 1200px) {
-        margin-left: auto;
+      margin-left: auto;
     }
-}
+  }
 
-.footer__flex-block {
+  &__flex-block {
     @media screen and (min-width: 1200px) {
-        @include centeredFlex();
+      @include centeredFlex();
     }
-}
+  }
 
-.footer__input {
+  &__input {
     width: 100%;
     height: 50px;
 
     padding-left: 16px;
     margin-bottom: 20px;
 
- 
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    
+
     color: $color-white;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: $bgd-hero-color;
     outline: none;
-    
+
     transition: border-color 250ms $transform-effect;
 
     &:focus {
-        border-color: $secondary-color;
+      border-color: $secondary-color;
     }
 
     @media screen and (min-width: 768px) {
-        width: 450px;
+      width: 450px;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 358px;
+      width: 358px;
 
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
+  }
 }

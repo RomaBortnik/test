@@ -12,27 +12,27 @@
     display: flex;
     align-items: center;
   }
-}
 
-.site-contacts__item + .site-contacts__item {
-  margin-top: 10px;
+  &__item + &__item {
+    margin-top: 10px;
 
-  @media screen and (min-width: 1200px) {
-    margin-top: 0;
-    margin-left: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+      margin-left: 30px;
+    }
   }
-}
 
-.site-contacts__link {
-  @include centeredFlex();
+  &__link {
+    @include centeredFlex();
 
-  color: $descr-color;
+    color: $descr-color;
 
-  transition: color 250ms $transform-effect;
-}
+    transition: color 250ms $transform-effect;
+  }
 
-.site-contacts__icon {
-  margin-right: 10px;
+  &__icon {
+    margin-right: 10px;
 
-  fill: currentColor;
+    fill: currentColor;
+  }
 }

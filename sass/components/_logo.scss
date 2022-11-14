@@ -1,15 +1,15 @@
 .logo {
-    font-family: $logo-font;
-    font-size: 26px;
-    line-height: 1.19;
+  font-family: $logo-font;
+  font-size: 26px;
+  line-height: 1.19;
 
-    color: $secondary-color;
-}
+  color: $secondary-color;
 
-.logo--black-accent {
+  &--black-accent {
     color: $logo-header-color;
-}
+  }
 
-.logo--white-accent {
+  &--white-accent {
     color: $primary-bgd-color;
+  }
 }
