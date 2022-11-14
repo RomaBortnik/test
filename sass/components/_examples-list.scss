@@ -77,6 +77,10 @@
 
   padding: 77px 24px;
 
+  @media screen and (max-width: 400px) {
+    padding: 40px 24px;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 49px 24px 77px 24px;
   }
@@ -94,6 +98,10 @@
     line-height: 1.56;
 
     color: $color-white;
+
+    @media screen and (max-width: 400px) {
+      font-size: 16px;
+    }
   }
 
   .examples-list__item:hover & {
