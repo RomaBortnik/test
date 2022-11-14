@@ -1004,7 +1004,7 @@ ul {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 767px) {
   .filters-list {
@@ -1018,6 +1018,16 @@ ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filters-list {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters-list {
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 767px) {
